@@ -3,63 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>Hackster Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css" type="text/css">
   </head>
   <body>
-    <header>
-      <img class='logo' src="https://www.hackster.io/assets/hackster_logo_blue-03ea84833aa0dcf8f33be76d265d37340c7cd1ceb77a74429deb631ef0261e8f.png" alt="">
-      <nav>
-        <ul>
-          <li>Explore</li>
-          <li><form class="search" action="index.html" method="post">
-            <input type="text" name="search" value="" placeholder="what are you looking for">
-          </form></li>
-        </ul>
-        <div class="login">
-          <button type="button" name="LogIn">Log in</button>
-          <button type="button" name="SignUp">Sign up</button>
+    <nav class="navbar navbar-fix">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class='logo' src="https://www.hackster.io/assets/hackster_logo_blue-03ea84833aa0dcf8f33be76d265d37340c7cd1ceb77a74429deb631ef0261e8f.png" alt=""></a>
         </div>
-      </nav>
-    </header>
-    <div class="welcomeimage">
-      <div class="tagline">
-        <h2>Learn to design, create, and program electronics</h2>  
-        9,903 open-source project tutorials shared by 312,705 developers
-      </div>
-      <div class="getstarted">
-        <form class="inputemail" action="index.html" method="post">
-          <input type="text" name="email" value="" placeholder="Enter your email">
-          <input type="button" name="getstarted" value="Get Started">
-          or
-          <input type="button" name="getstarted" value="Connect with facebook">
-        </form>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button class="btn btn-link height-fix" href="#">Log in</button></li>
+            <li><button class="btn btn-info height-fix" href="#">Sign up</button></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="jumbotron">
+      <div class="container center-header">
+        <div class="tagline">
+          <h2>Learn to design, create, and program electronics</h2>  
+          <p>9,903 open-source project tutorials shared by 312,705 developers</p>
+        </div>
+        <div class="getstarted">
+          <form class="inputemail" action="index.html" method="post">
+            <input type="text" name="email" placeholder="Enter your email">
+            <input type="button" name="getstarted" value="Get Started">
+            or
+            <input type="button" name="getstarted" value="Connect with facebook">
+          </form>
+        </div>
       </div>
     </div>
-    <div class="feature">
-      <div class="browse">
-        <img src="https://www.hackster.io/assets/home/icons/site.png" alt="">
-        <h5>Browse project tutorials ></h5>
-        <p>Find inspiration and learn how to build your own internet-connected electronics</p>
+    <div class="container">
+      <div class="feature row">
+        <div class="col-md-3">
+          <img src="https://www.hackster.io/assets/home/icons/site.png" alt="">
+          <h5>Browse project tutorials ></h5>
+          <p>Find inspiration and learn how to build your own internet-connected electronics</p>
+        </div>
+        <div class="col-md-3">
+          <img src="https://www.hackster.io/assets/home/icons/hackster-live.png" alt="">
+          <h5>Join live events and webinars ></h5>
+          <p>Learn to build electronics by attending workshops online or in your local area</p>
+        </div>
+        <div class="col-md-3">
+          <img src="https://www.hackster.io/assets/home/icons/contest.png" alt="">
+          <h5>Enter design challenges ></h5>
+          <p>Test your skills with design challenges for a chance to win big prizes</p>
+        </div>
+        <div class="col-md-3">
+          <img src="https://www.hackster.io/assets/home/icons/bounties.png" alt="">
+          <h5>Follow topics and platforms ></h5>
+          <p>Stay updated with your favorite topics and platforms and connect with the community</p>
+        </div>
       </div>
-      <div class="join">
-        <img src="https://www.hackster.io/assets/home/icons/hackster-live.png" alt="">
-        <h5>Join live events and webinars ></h5>
-        <p>Learn to build electronics by attending workshops online or in your local area</p>
+    </div>
+    <div class="container-fluid background-fix">
+      <div class="container learnmore">
+        <span class="tag">Hackster is a community dedicated to increasing hardware knowledge.</span> Want to know more?
+        <p><a class="tag" href="#">Learn more about Hackster ></a></p>
       </div>
-      <div class="challenge">
-        <img src="https://www.hackster.io/assets/home/icons/contest.png" alt="">
-        <h5>Enter design challenges ></h5>
-        <p>Test your skills with design challenges for a chance to win big prizes</p>
-      </div>
-      <div class="topic">
-        <img src="https://www.hackster.io/assets/home/icons/bounties.png" alt="">
-        <h5>Follow topics and platforms ></h5>
-        <p>Stay updated with your favorite topics and platforms and connect with the community</p>
-      </div>
+    </div>
     </div>
     <div class="learnmore">
-      <span class="tag">Hackster is a community dedicated to increasing hardware knowledge. Want to know more?</span>
-      <a class="tag" href="#">Learn more about Hackster ></a>
     </div>
     <div class="container">
       <div class="title_container">
@@ -844,5 +876,8 @@
         <h5>Hackster.io 2017</h5>
       </div>
     </footer>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

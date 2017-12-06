@@ -1,0 +1,33 @@
+.logo {
+  height: 30px;
+  margin-top: -5px;
+}
+
+.navbar-fix {
+  margin-bottom: 0px;
+}
+
+.height-fix {
+  margin-top: 5px;
+  height: 30px;
+}
+
+.center-header {
+  text-align: center;
+}
+
+.feature img {
+  height: 60px;
+}
+
+.background-fix {
+  background-color: #F7F7F7;
+}
+
+.learnmore {
+  padding: 20px 0px 20px 0px;
+}
+
+.tag {
+  font-weight: bold;
+}
