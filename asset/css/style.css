@@ -1,0 +1,124 @@
+
+.logo {
+  height: 30px;
+  margin-top: -5px;
+}
+
+.navbar-fix {
+  margin-bottom: 0px;
+}
+
+.height-fix {
+  margin-top: 5px;
+  height: 30px;
+}
+
+.jumbotron {
+  padding: 100px;
+}
+
+.feature {
+  padding: 50px;
+}
+
+.center-header {
+  text-align: center;
+}
+
+.feature img {
+  height: 60px;
+}
+
+.background-fix {
+  background-color: #F7F7F7;
+}
+
+.learnmore {
+  padding: 20px 10px 20px 10px;
+}
+
+.tag {
+  font-weight: bold;
+}
+
+.title_container {
+  padding: 20px 0px 20px 10px;
+}
+
+.heading-fix {
+  font-weight: bold;
+}
+
+.like {
+  float: left;
+}
+
+.views {
+  margin-left: 20px;
+}
+
+.difficulty {
+  margin-top: -20px;
+  margin-right: 10px;
+  float: right;
+}
+
+.card_desc {
+  height: 100px;
+}
+
+.card_contest_desc {
+  height: 145px;
+}
+
+.card_platform_desc {
+  height: 185px;
+}
+
+.platforms {
+  margin-left: 20px;
+  float: left;
+  width: 133px;
+  border: 1px solid lightgray;
+  margin-right: -10px;
+  text-align: center;
+}
+
+.platforms .image {
+   width: 100%;
+   border-radius: 2%;
+}
+
+.loadmore {
+  padding-bottom: 80px;
+}
+
+.loadmore button {
+  position: absolute;
+  left: 48%;
+}
+
+footer {
+  clear: both;
+  background-color: #333333;
+  color: #FFFFFF;
+  height: 300px;
+}
+
+.footer_container {
+  float: left;
+  padding-top: 20px;
+  padding-left: 5%;
+}
+
+ul.nolist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_ {
+  float: right;
+  padding-top: 20px;
+  padding-right: 5%;
+}
